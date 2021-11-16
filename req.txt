@@ -1,0 +1,10 @@
+cycler
+functools32
+matplotlib
+numpy
+PyAudio
+pyparsing
+python-dateutil
+pytz
+six
+subprocess32

@@ -21,11 +21,11 @@ MODE = sys.argv[1]
 # Size of each read-in chunk
 CHUNK = 1
 # Amount of channels of the live recording
-CHANNELS = 2
+CHANNELS =  2
 # Sample width of the live recording
 WIDTH = 2
 # Sample rate in Hz of the live recording
-SAMPLE_RATE = 44100
+SAMPLE_RATE = 48000
 # Set how often data for the result will be saved (every nth CHUNK)
 if MODE != '-p' and MODE != '--playback':
     try:
@@ -114,7 +114,7 @@ def file_mode():
                 # Calculate the difference of the source and the inverted audio
                 difference = calculate_difference(original, inverted)
                 # Print the current difference
-                stdscr.addstr('Difference (in dB): {}\n'.format(difference))
+                ###stdscr.addstr('Difference (in dB): {}\n'.format(difference))
                 # Append the difference to the list used for the plot
                 decibel_levels.append(difference)
                 # Calculate the waves for the graph
